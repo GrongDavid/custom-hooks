@@ -11,7 +11,7 @@ function useFlip(initialFlipState = true) {
   return [isFlipped, flip]
 }
 
-function useAxios(keyInLS, baseUrl) {
+function useAxios(baseUrl) {
   const [responses, setResponses] = useState([])
 
   const addResponses = async (formatter = data => data, restOfUrl = "") => {
